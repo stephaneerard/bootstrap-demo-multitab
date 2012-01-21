@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="js/jquery-ui/css/ui-lightness/jquery-ui-1.8.17.custom.css">
+<link rel="stylesheet" href="bootstrap/bootstrap.css">
+<link rel="stylesheet" href="jquery-multitab/jquery-multitab.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui/js/jquery-ui-1.8.17.custom.min.js"></script>
+<script src="bootstrap/js/bootstrap-tabs.js"></script>
+<script src="jquery-multitab/jquery-multitab.js"></script>
+<style>
+.row.demo {
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+
+
+		<div class="row demo">
+			<h1>Standard Bootstrap .tabs()</h1>
+		</div>
+		<div class="row">
+			<ul class="tabs">
+				<li class="active"><a href="#home">Horizontal Top 1</a></li>
+				<li><a href="#profile">Horizontal Top 2</a></li>
+				<li><a href="#messages">Horizontal Top 3</a></li>
+				<li><a href="#settings">Horizontal Top 4</a></li>
+			</ul>
+			<div class="pill-content" style="margin-bottom: 90px;">
+				<div class="active" id="home">Horizontal Top 1</div>
+				<div id="profile">Horizontal Top 2</div>
+				<div id="messages">Horizontal Top 3</div>
+				<div id="settings">Horizontal Top 4</div>
+			</div>
+		</div>
+
+		<div class="row demo">
+			<h1>Non-Standard Bootstrap .tabs() as Horizontal Bottom</h1>
+		</div>
+		<div class="row">
+			<div class="multitab">
+				<div class="horizontal bottom">
+					<div class="pill-content" style="margin-bottom: 90px;">
+						<div class="active" id="home">Horizontal Top 1</div>
+						<div id="profile">Horizontal Top 2</div>
+						<div id="messages">Horizontal Top 3</div>
+						<div id="settings">Horizontal Top 4</div>
+					</div>
+					<ul class="tabs">
+						<li class="active"><a href="#home">Horizontal Bottom 1</a></li>
+						<li><a href="#profile">Horizontal Bottom 2</a></li>
+						<li><a href="#messages">Horizontal Bottom 3</a></li>
+						<li><a href="#settings">Horizontal Bottom 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row demo">
+			<h1>Standard Bootstrap .tabs() + Vertical Left</h1>
+		</div>
+		<div class="row">
+			<div class="multitab">
+				<div class="span vertical left">
+					<ul class="tabs">
+						<li class="active"><a href="#home">Vertial Left 1</a></li>
+						<li><a href="#profile">Vertical Left 2</a></li>
+						<li><a href="#messages">Vertical Left 3</a></li>
+						<li><a href="#settings">Vertical Left 4</a></li>
+					</ul>
+				</div>
+				<div class="span horizontal top">
+					<div>
+						<ul class="tabs">
+							<li class="active"><a href="#home">Horizontal Top 1</a></li>
+							<li><a href="#profile">Horizontal Top 2</a></li>
+							<li><a href="#messages">Horizontal Top 3</a></li>
+							<li><a href="#settings">Horizontal Top 4</a></li>
+						</ul>
+						<div class="pill-content" style="margin-bottom: 90px;">
+							<div class="active" id="home">...</div>
+							<div id="profile">...</div>
+							<div id="messages">...</div>
+							<div id="settings">...</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row demo">
+			<h1>Standard Bootstrap .tabs() + Vertical Right</h1>
+		</div>
+		<div class="row">
+			<div class="multitab">
+				<div class="span horizontal top">
+					<div>
+						<ul class="tabs">
+							<li class="active"><a href="#home">Horizontal Top 1</a></li>
+							<li><a href="#profile">Horizontal Top 2</a></li>
+							<li><a href="#messages">Horizontal Top 3</a></li>
+							<li><a href="#settings">Horizontal Top 4</a></li>
+						</ul>
+						<div class="pill-content" style="margin-bottom: 90px;">
+							<div class="active" id="home">...</div>
+							<div id="profile">...</div>
+							<div id="messages">...</div>
+							<div id="settings">...</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row demo">
+			<h1>Standard Bootstrap .tabs() + Vertical Left+Right</h1>
+		</div>
+		<div class="row">
+			<div class="multitab">
+				<div class="span vertical left">
+					<ul class="tabs">
+						<li class="active"><a href="#home">Vertial Left 1</a></li>
+						<li><a href="#profile">Vertical Left 2</a></li>
+						<li><a href="#messages">Vertical Left 3</a></li>
+						<li><a href="#settings">Vertical Left 4</a></li>
+					</ul>
+				</div>
+				<div class="span horizontal top">
+					<div>
+						<ul class="tabs">
+							<li class="active"><a href="#home">Horizontal Top 1</a></li>
+							<li><a href="#profile">Horizontal Top 2</a></li>
+							<li><a href="#messages">Horizontal Top 3</a></li>
+							<li><a href="#settings">Horizontal Top 4</a></li>
+						</ul>
+						<div class="pill-content" style="margin-bottom: 90px;">
+							<div class="active" id="home">...</div>
+							<div id="profile">...</div>
+							<div id="messages">...</div>
+							<div id="settings">...</div>
+						</div>
+					</div>
+					<div>
+						<div class="horizontal bottom">
+							<ul class="tabs">
+								<li class="active"><a href="#home">Horizontal Bottom 1</a></li>
+								<li><a href="#profile">Horizontal Bottom 2</a></li>
+								<li><a href="#messages">Horizontal Bottom 3</a></li>
+								<li><a href="#settings">Horizontal Bottom 4</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="span vertical right">
+					<ul class="tabs">
+						<li class="active"><a href="#home">Vertial Right 1</a></li>
+						<li><a href="#profile">Vertical Right 2</a></li>
+						<li><a href="#messages">Vertical Right 3</a></li>
+						<li><a href="#settings">Vertical Right 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row demo">
+			<h1>Standard Bootstrap .tabs() + Vertical Left+Right +
+				Horizontal Bottom</h1>
+		</div>
+		<div class="row">
+			<div class="multitab">
+				<div class="span vertical left">
+					<ul class="tabs">
+						<li class="active"><a href="#home">Vertial Left 1</a></li>
+						<li><a href="#profile">Vertical Left 2</a></li>
+						<li><a href="#messages">Vertical Left 3</a></li>
+						<li><a href="#settings">Vertical Left 4</a></li>
+					</ul>
+				</div>
+				<div class="span horizontal top">
+					<div>
+						<ul class="tabs">
+							<li class="active"><a href="#home">Horizontal Top 1</a></li>
+							<li><a href="#profile">Horizontal Top 2</a></li>
+							<li><a href="#messages">Horizontal Top 3</a></li>
+							<li><a href="#settings">Horizontal Top 4</a></li>
+						</ul>
+						<div class="pill-content" style="margin-bottom: 90px;">
+							<div class="active" id="home">...</div>
+							<div id="profile">...</div>
+							<div id="messages">...</div>
+							<div id="settings">...</div>
+						</div>
+					</div>
+					<div>
+						<div class="horizontal bottom">
+							<ul class="tabs">
+								<li class="active"><a href="#home">Vertial Right 1</a></li>
+								<li><a href="#profile">Vertical Right 2</a></li>
+								<li><a href="#messages">Vertical Right 3</a></li>
+								<li><a href="#settings">Vertical Right 4</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="span vertical right">
+					<ul class="tabs">
+						<li class="active"><a href="#home">Vertial Right 1</a></li>
+						<li><a href="#profile">Vertical Right 2</a></li>
+						<li><a href="#messages">Vertical Right 3</a></li>
+						<li><a href="#settings">Vertical Right 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			$('.tabs').tabs()
+		})
+	</script>
+</body>
+</html>

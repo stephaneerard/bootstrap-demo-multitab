@@ -1,0 +1,62 @@
+.multitab .vertical {
+	float: left;
+	margin-top: 35px;
+	padding-right: 0;
+}
+
+.multitab .vertical .tabs {
+	border-style: none;
+	margin-right: -3px;
+}
+
+.multitab .vertical.left .tabs {
+	border-color: #DDDDDD transparent #DDDDDD;
+}
+
+.multitab .vertical .tabs li {
+	float: none;
+}
+
+.multitab .vertical.left .tabs li>a {
+	border-radius: 4px 0 0 4px;
+	border-color: transparent #DDDDDD transparent transparent;
+}
+
+.multitab .vertical.right .tabs li>a {
+	border-radius: 0 4px 4px 0;
+	border-color: transparent transparent transparent #DDDDDD
+}
+
+.multitab .vertical.left .tabs li.active>a {
+	border-color: #DDDDDD transparent #DDDDDD #DDDDDD;
+}
+
+.multitab .vertical.right .tabs li.active>a {
+	border-color: #DDDDDD #DDDDDD #DDDDDD transparent;
+}
+
+.multitab .horizontal {
+	float: left;
+}
+
+.multitab .horizontal.bottom .tabs{
+	 border-color: transparent;
+}
+
+.multitab .horizontal.bottom ul li a {
+	border-color: #DDDDDD transparent transparent transparent;
+	border-radius: 0 0 4px 4px;
+}
+
+.multitab .horizontal.bottom ul li.active a {
+	border-color: transparent #DDDDDD #DDDDDD #DDDDDD;
+	border-radius: 0 0 4px 4px;
+}
+
+.multitab .horizontal.bottom ul li:first-child a{
+	margin-right: 0px;
+}
+
+.multitab .horizontal  .pill-content {
+	margin: 20px;
+}
